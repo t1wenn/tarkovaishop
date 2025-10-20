@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>TarkovAIshop — Цифровые товары</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TarkovAIshop — цифровые товары (EFT и нейросети)</title>
+  <meta name="description" content="TarkovAIshop — аккаунты Escape From Tarkov и подписки на нейросети. Безопасно и быстро." />
+  <style>
+    :root{
+      --bg:#0e0e0f; --card:#151517; --muted:#9aa0a6; --txt:#f4f5f6;
+      --gold:#d4af37; --gold-2:#f5d36b; --accent:#00e0c6;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--txt); font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    .wrap{max-width:1000px; margin:0 auto; padding:24px}
+    .hero{
+      border:1px solid #26262a; background:
+      radial-gradient(1000px 300px at 50% -10%, rgba(212,175,55,.15), transparent 60%),
+      linear-gradient(180deg,#111114,#0d0d0f);
+      border-radius:24px; padding:28px; text-align:center; position:relative; overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .coin{
+      position:absolute; inset:auto -120px -160px auto; width:420px; height:420px; border-radius:50%;
+      background:radial-gradient(circle at 35% 35%, var(--gold-2), var(--gold) 45%, #9a7b1f 70%, #4d3d10);
+      filter:blur(12px) saturate(1.05) brightness(0.9); opacity:.18; transform:rotate(18deg);
+    }
+    h1{font-size:28px; margin:6px 0 8px; letter-spacing:.2px}
+    .sub{color:var(--muted); margin:0 0 16px}
+    .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:10px}
+    .btn{
+      display:inline-block; padding:12px 18px; border-radius:14px; text-decoration:none; color:#0a0a0a; font-weight:700;
+      background:linear-gradient(180deg,var(--gold-2),var(--gold));
+      box-shadow:0 8px 20px rgba(212,175,55,.25); transition:.2s transform, .2s filter;
+    }
+    .btn:hover{transform:translateY(-2px); filter:brightness(1.05)}
+    .btn-outline{
+      background:transparent; color:var(--txt); border:1px solid #2a2a2f; box-shadow:none;
+    }
+    .grid{display:grid; grid-template-columns:repeat( auto-fit, minmax(260px,1fr) ); gap:16px; margin-top:22px}
+    .card{
+      background:var(--card); border:1px solid #26262a; border-radius:18px; padding:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.25);
+    }
+    .tag{font-size:12px; color:#c6c6c9; opacity:.9}
+    .title{font-size:18px; margin:6px 0 4px}
+    .price{font-weight:800; color:var(--gold-2); margin:8px 0 0}
+    .muted{color:var(--muted); font-size:14px}
+    footer{margin:28px 0 8px; color:#a6a6aa; text-align:center; font-size:13px}
+    .links{display:flex; gap:10px; justify-content:center; margin-top:10px}
+    .links a{color:var(--accent); text-decoration:none}
+    .kicker{color:#b7b7bc; font-size:13px; margin-top:8px}
+    .brand{font-weight:800; color:var(--gold-2)}
+  </style>
 </head>
-<body style="font-family:sans-serif; text-align:center; background:#0f0f0f; color:white;">
-  <h1>Добро пожаловать в TarkovAIshop</h1>
-  <p>Продажа цифровых товаров: Escape From Tarkov, ChatGPT, Midjourney.</p>
-  <p><a href="https://t.me/TarkovAIshop_bot" style="color:#00ffcc;">Перейти в Telegram-бота</a></p>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="coin"></div>
+      <div class="tag">Добро пожаловать</div>
+      <h1>TarkovAIshop — цифровой магазин Escape From Tarkov и нейросетей</h1>
+      <p class="sub">Быстрая оплата и выдача. Официальные провайдеры Telegram, Paysto и ручные способы.</p>
+      <div class="cta">
+        <a class="btn" href="https://t.me/TarkovAIshop_bot" target="_blank" rel="noopener">Перейти в бота</a>
+        <a class="btn btn-outline" href="https://t.me/TarkovAIshop" target="_blank" rel="noopener">Канал с новостями</a>
+        <a class="btn btn-outline" href="https://t.me/tarkov_support" target="_blank" rel="noopener">Поддержка</a>
+      </div>
+      <p class="kicker">Если оплата прошла, но нужна помощь — пишите в поддержку: <span class="brand">@tarkov_support</span></p>
+    </section>
+
+    <section style="margin-top:28px">
+      <div class="grid">
+        <div class="card">
+          <div class="tag">Escape From Tarkov</div>
+          <div class="title">Standard Edition</div>
+          <div class="muted">Базовое издание для старта</div>
+          <div class="price">~ 1050 ₽</div>
+        </div>
+        <div class="card">
+          <div class="tag">Escape From Tarkov</div>
+          <div class="title">Left Behind Edition</div>
+          <div class="muted">Расширенный стартовый набор</div>
+          <div class="price">~ 1850 ₽</div>
+        </div>
+        <div class="card">
+          <div class="tag">Escape From Tarkov</div>
+          <div class="title">Prepare for Escape Edition</div>
+          <div class="muted">Больше слотов и бонусов</div>
+          <div class="price">~ 2000 ₽</div>
+        </div>
+        <div class="card">
+          <div class="tag">Escape From Tarkov</div>
+          <div class="title">Edge of Darkness / Unheard</div>
+          <div class="muted">Максимальный пак</div>
+          <div class="price">~ 3000–4500 ₽</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">Нейросети</div>
+          <div class="title">ChatGPT Plus — 1 месяц</div>
+          <div class="muted">Подписка ChatGPT</div>
+          <div class="price">399 ₽</div>
+        </div>
+        <div class="card">
+          <div class="tag">Нейросети</div>
+          <div class="title">ChatGPT Plus — 3 месяца</div>
+          <div class="muted">Выгодный комплект</div>
+          <div class="price">1299 ₽</div>
+        </div>
+        <div class="card">
+          <div class="tag">Нейросети</div>
+          <div class="title">Midjourney — аккаунт</div>
+          <div class="muted">Доступ к генерации изображений</div>
+          <div class="price">1999 ₽</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © TarkovAIshop • Ежедневно 10:00–22:00 (МСК) • <a href="https://t.me/tarkov_support" style="color:#b5f3e8">поддержка</a>
+      <div class="links">
+        <a href="success.html">Success</a> · <a href="fail.html">Fail</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
